@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/train.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+    <h2>
+    Train Schedules
+    </h2>
+    <div class="container" id="trainAdd">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" placeholder="Train Name" id="trainName">
+                <input type="text" placeholder="Destination" id="destination">
+                <input type="time" placeholder="Departure (Military Format)" id="departure">
+                <input type="time" placeholder="Frequency (ex 04:00 for 4 hours)" id="frequency">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    <div class="container" id="trainDisplay">
+        <div class="row">
+            <table id="trainHeader">
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </table>
+        </div>
+        <div class="row">
+            <table id="trainInput">
+    
+            </table>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="./assets/app.js"></script>
+</body>
+</html>

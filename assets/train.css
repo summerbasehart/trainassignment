@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}    
+
+h1 {
+    text-align: center
+}
+
+.container {
+    border: 2px lavender dotted;
+    background-color: lavenderblush;
+    padding-inline-start: 2%
+}
+
+#trainInput {
+    text-align: center;
+    padding-inline-start: 2%;
+    
+}
